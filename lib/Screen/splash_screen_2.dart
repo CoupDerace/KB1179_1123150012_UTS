@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:kb1179_1123150012_uts/Screen/splash_screen_2.dart';
 
-class SplashScreenUTS extends StatelessWidget {
-  const SplashScreenUTS({super.key});
+class SplashScreenUTS2 extends StatelessWidget {
+  const SplashScreenUTS2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +19,7 @@ class SplashScreenUTS extends StatelessWidget {
                 color: Colors.deepOrange,
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                  image: AssetImage('assets/images/1.jpeg'),
+                  image: AssetImage('assets/images/2.jpeg'),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -45,7 +44,7 @@ class SplashScreenUTS extends StatelessWidget {
                   height: 10,
                   width: 10,
                   decoration: BoxDecoration(
-                    color: Colors.green,
+                    color: Colors.green[100]!,
                     shape: BoxShape.circle,
                   ),
                 ),
@@ -54,7 +53,7 @@ class SplashScreenUTS extends StatelessWidget {
                   height: 10,
                   width: 10,
                   decoration: BoxDecoration(
-                    color: Colors.green[100]!,
+                    color: Colors.green,
                     shape: BoxShape.circle,
                   ),
                 ),
@@ -81,7 +80,7 @@ class SplashScreenUTS extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SplashScreenUTS2(),
+                        builder: (context) => const SplashScreenUTS3(),
                       ),
                     );
                   },
