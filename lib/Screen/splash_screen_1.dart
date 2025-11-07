@@ -19,10 +19,22 @@ class SplashScreenUTS extends StatelessWidget {
                 color: Colors.deepOrange,
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                image: AssetImage('assets/images/1.jpeg'),
-                fit: BoxFit.cover,
+                  image: AssetImage('assets/images/1.jpeg'),
+                  fit: BoxFit.cover,
                 ),
               ),
+            ),
+            SizedBox(height: 20),
+            Text(
+              "Selamat Datang di TourTravel",
+              style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 2),
+            Text(
+              "Aplikasi Pelayanan Jasa Tour dan Travel\n"
+              "Terpercaya dan Terbaik di Cilongok",
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 14.0, color: Colors.green),
             ),
           ],
         ),
