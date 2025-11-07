@@ -36,6 +36,21 @@ class SplashScreenUTS extends StatelessWidget {
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 14.0, color: Colors.green),
             ),
+            SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  height: 10,
+                  width: 10,
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                    shape: BoxShape.circle,
+                  ),
+                )
+                
+              ],
+            )
           ],
         ),
       ),
