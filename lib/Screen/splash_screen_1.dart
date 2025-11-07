@@ -18,10 +18,10 @@ class SplashScreenUTS extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.deepOrange,
                 shape: BoxShape.circle,
-                // image: DecorationImage(
-                // image: AssetImage('assets/images/uts_image.png'),
-                // fit: BoxFit.cover,
-                // ),
+                image: DecorationImage(
+                image: AssetImage('assets/images/1.jpeg'),
+                fit: BoxFit.cover,
+                ),
               ),
             ),
           ],
