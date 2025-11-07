@@ -5,6 +5,20 @@ class SplashScreenUTS extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Center(
+        child: Column(
+          //membuat image di dalam container
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(height: 20,),
+            Container(
+              height: 200,
+              width: 200,
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
