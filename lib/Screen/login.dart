@@ -52,6 +52,9 @@ class Login extends StatelessWidget {
                   ),
                 ),
               ),
+
+              const SizedBox(height: 20),
+              // kolom input password
               TextField(
                 obscureText: true,
                 decoration: InputDecoration(
@@ -68,9 +71,64 @@ class Login extends StatelessWidget {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide(color: Colors.yellow[700]!, width: 2),
+                    borderSide: BorderSide(
+                      color: Colors.yellow[700]!,
+                      width: 2,
+                    ),
                   ),
                 ),
+              ),
+
+              const SizedBox(height: 8),
+              // ======== LUPA EMAIL ========
+              Align(
+                alignment: Alignment.centerRight,
+                child: Text(
+                  "Nih asli lu lupa Email?",
+                  style: TextStyle(
+                    // color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
+              //  tombol login
+              Container(
+                margin: const EdgeInsets.symmetric(horizontal: 40),
+                child: SizedBox(
+                  height: 40,
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      //mengarahkan ke halaman berikutnya
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.green,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                    child: const Text(
+                      "Login",
+                      style: TextStyle(fontSize: 14, color: Colors.white),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 25),
+              // garis pembatas dengan teks "atau lanjut dengan"
+              Row(
+                children: [
+                  Expanded(child: Divider(color: Colors.grey[300])),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Text(
+                      "atau lanjut dengan",
+                      style: TextStyle(color: Colors.grey[600]),
+                    ),
+                  ),
+                  Expanded(child: Divider(color: Colors.grey[300])),
+                ],
               ),
             ],
           ),
