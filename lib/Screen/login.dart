@@ -28,6 +28,27 @@ class Login extends StatelessWidget {
                 "Silahkan login terlebih dahulu untuk melanjutkan",
                 style: TextStyle(fontSize: 16.0, color: Colors.grey),
               ),
+              const SizedBox(height: 20),
+              // kolom input email
+              TextField(
+                keyboardType: TextInputType.emailAddress,
+                decoration: InputDecoration(
+                  labelText: "Email",
+                  hintText: "Masukkan Email anda",
+                  prefixIcon: const Icon(Icons.email_outlined),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: BorderSide(color: Colors.deepOrange[300]!),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: BorderSide(color: Colors.yellow[700]!, width: 2),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
