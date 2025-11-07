@@ -47,10 +47,27 @@ class SplashScreenUTS extends StatelessWidget {
                     color: Colors.green,
                     shape: BoxShape.circle,
                   ),
-                )
-                
+                ),
+                SizedBox(width: 10),
+                Container(
+                  height: 10,
+                  width: 10,
+                  decoration: BoxDecoration(
+                    color: Colors.green[100]!,
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                SizedBox(width: 10),
+                Container(
+                  height: 10,
+                  width: 10,
+                  decoration: BoxDecoration(
+                    color: Colors.green[100]!,
+                    shape: BoxShape.circle,
+                  ),
+                ),
               ],
-            )
+            ),
           ],
         ),
       ),
