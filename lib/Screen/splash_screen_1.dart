@@ -11,11 +11,19 @@ class SplashScreenUTS extends StatelessWidget {
           //membuat image di dalam container
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(height: 20,),
+            SizedBox(height: 20),
             Container(
               height: 200,
               width: 200,
-            )
+              decoration: BoxDecoration(
+                color: Colors.deepOrange,
+                shape: BoxShape.circle,
+                // image: DecorationImage(
+                // image: AssetImage('assets/images/uts_image.png'),
+                // fit: BoxFit.cover,
+                // ),
+              ),
+            ),
           ],
         ),
       ),
